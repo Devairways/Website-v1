@@ -182,6 +182,7 @@ section ul{
 .blogs{
 	height: 250px;
 	width: 200px;
+	margin: auto;
 	background-color: grey;
 	border-radius: 5px;
 }
