@@ -4,6 +4,7 @@ body{
 	margin: 0;
     font-family: 'Open Sans', sans-serif ;
 }
+/*Navigatie*/
 nav{
 	background-color: #434141;
 	position: absolute;
@@ -40,7 +41,7 @@ nav{
 	background-color: #317164;
 	background-size: cover;
 }
-
+/*id tags*/
 #starter{
 	background-image: url("./panelen/trees.jpg");
 	min-height: 100vh;
@@ -57,39 +58,24 @@ nav{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-	color: #ffffff !important;
+	color: #ffffff;
+}
+#skills h1{
+	color: #ffffff;
 }
 #profiel{
 	background-color: #fff;
 	margin: 0;
 }
+#skillBar{
+	width: 100%;
+	background-color: grey;
+}
 
-.overLay{
-	background: rgba(140,34,22,0.4);
-	min-height: 100vh;
-	background-position: absolute;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-top: 0;
+#blogspot{
+	height: 350px;
 }
-.centerText{
-	text-align: center;
-	font-size: 2em;
-    color: #ffffff;
-	padding-top: 30vh;
-	animation-duration: 1s;
-	animation-delay: 200ms;
-	animation-timing-function: ease-out;
-	animation-fill-mode: forwards;
-	animation-name: verschijn;
-	opacity: 0;
-}
-@keyframes verschijn{
-	0%{opacity: 0; transform: rotateX(90deg);}
-	50%{opacity: 0.5; transform: rotateX(45deg);}
-	100%{opacity: 1; transform: rotateX(0deg);}
-}
+
 #pointer{
 	background-color: #434141;
 	width: 120px;
@@ -113,11 +99,10 @@ nav{
 	animation-iteration-count: infinite;
 	animation-name: wiggle;
 }
-@keyframes wiggle{
-	0%{padding-top: 0;}
-	50%{padding-top: 10px;}
-	100%{padding-top: 0;}
+#specs{
+	text-align: start;
 }
+/*html-tags*/
 a[href="#skillsNav"]{
 	text-decoration: none;
 	padding: 5px 5px;
@@ -149,7 +134,7 @@ section{
 section ul{
 	list-style: none;
 	text-align: start;
-	border: 1px solid black;
+	border: 1px solid grey;
 	padding: 25px;
 	margin-right: 10px;
 }
@@ -160,6 +145,37 @@ footer ul{
 	align-content: space-around;
 	padding: 0;
 }
+footer{
+	background-color: #434141;
+	min-height: 300px;
+	margin: 0;
+	padding:45px;
+}
+footer div{
+	border-bottom: 1px solid grey;
+}
+/*klassen*/
+.overLay{
+	background: rgba(140,34,22,0.4);
+	min-height: 100vh;
+	background-position: absolute;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0;
+}
+.centerText{
+	text-align: center;
+	font-size: 2em;
+    color: #ffffff;
+	padding-top: 30vh;
+	animation-duration: 1s;
+	animation-delay: 200ms;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-name: verschijn;
+	opacity: 0;
+}
 .contact{
 	margin: auto;
 }
@@ -169,7 +185,7 @@ footer ul{
 	margin: 0 auto;
 	text-align: center;
 	padding: 40px 0;
-	border-bottom: 1px solid grey;
+	
 }
 .grid{
 	display: grid;
@@ -187,18 +203,13 @@ footer ul{
 
 .titel{
 	grid-column: span 3;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid grey;
 }
 .titel2{
 	grid-column: 1/3;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid grey;
 }
 
-
-#skillBar{
-	width: 100%;
-	background-color: grey;
-}
 .skillLvl{
   width: 10%;
   height: 30px;
@@ -206,9 +217,7 @@ footer ul{
   text-align: center; /* To center it horizontally (if you want) */
   line-height: 30px; /* To center it vertically */ 
 }
-#blogspot{
-	height: 350px;
-}
+
 .blogs{
 	height: 250px;
 	width: 200px;
@@ -217,9 +226,15 @@ footer ul{
 	border-radius: 5px;
 	opacity: 0.4;
 }
-footer{
-	background-color: #434141;
-	min-height: 300px;
-	margin: 0;
-	padding:45px;
+
+/*Animaties*/
+@keyframes verschijn{
+	0%{opacity: 0; transform: rotateX(90deg);}
+	50%{opacity: 0.5; transform: rotateX(45deg);}
+	100%{opacity: 1; transform: rotateX(0deg);}
+}
+@keyframes wiggle{
+	0%{padding-top: 0;}
+	50%{padding-top: 10px;}
+	100%{padding-top: 0;}
 }

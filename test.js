@@ -34,6 +34,7 @@ const experienceNav = document.querySelector("#experienceNav").addEventListener(
 const skillsNav = document.querySelector("#skillsNav").addEventListener("click", () =>{scroll(skills)});
 const blogNav = document.querySelector("#blogNav").addEventListener("click", () =>{scroll(blogspot)});
 
+// scrollmetingen voor Navbar
 function logScroll(){
 	let meting = profiel.getBoundingClientRect();
 		if(meting.top < 70){
