@@ -1,28 +1,34 @@
 body{
-	background: #C7B6B6;
+	background: #ffffff;
 	min-height: 100vh;
 	margin: 0;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif ;
 }
 nav{
 	background-color: #434141;
 	position: absolute;
 	top: 100%;
 	left: 5vw;
-	width: 90px;
-	height: 190px;
+	width: 120px;
+	height: 300px;
 	margin: 0;
 }
  nav ul {
- 	margin: 0 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 0;
  	padding: 0;
  	list-style: none;
  	text-align: center;
  }
  .navli{
- 	padding: 15px 0;
+ 	padding: 25px 0;
+ 	height: 25%;
  	font-size: 1.2em;
+ 	font-weight: bold;
  	color: white;
+ 	padding: auto;
 
  }
 
@@ -51,14 +57,15 @@ nav{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
+	color: #ffffff !important;
 }
 #profiel{
-	background-color: #826C6C;
+	background-color: #fff;
 	margin: 0;
 }
 
 .overLay{
-	background: rgba(122,34,22,0.4);
+	background: rgba(140,34,22,0.4);
 	min-height: 100vh;
 	background-position: absolute;
 	background-attachment: fixed;
@@ -85,7 +92,7 @@ nav{
 }
 #pointer{
 	background-color: #434141;
-	width: 90px;
+	width: 120px;
 	height: 70px;
 	left: 5vw;
 	bottom: 0;
@@ -111,19 +118,30 @@ nav{
 	50%{padding-top: 10px;}
 	100%{padding-top: 0;}
 }
-a{
+a[href="#skillsNav"]{
 	text-decoration: none;
 	padding: 5px 5px;
     color: #ffffff;
     border-radius: 25px;
     border:3px solid #ffffff;
 }
+header h1{
+	font-size: 4rem;
+}
 h1{
 	margin-bottom: 5px;
+	color: #317164;
+	font-size: 2rem;
+}
+h2{
+	color: #ffffff;
 }
 img{
 	margin: auto;
 	border-radius: 20%;
+}
+header{
+	line-height: 30px;
 }
 section{
 	margin: 30px;
@@ -135,12 +153,23 @@ section ul{
 	padding: 25px;
 	margin-right: 10px;
 }
+footer ul{
+	list-style: none;
+	width: 50%;
+	display: inline-flex;
+	align-content: space-around;
+	padding: 0;
+}
+.contact{
+	margin: auto;
+}
 
 .container{
 	max-width: 70%;
 	margin: 0 auto;
 	text-align: center;
 	padding: 40px 0;
+	border-bottom: 1px solid grey;
 }
 .grid{
 	display: grid;
@@ -158,10 +187,13 @@ section ul{
 
 .titel{
 	grid-column: span 3;
+	border-bottom: 2px solid black;
 }
 .titel2{
 	grid-column: 1/3;
+	border-bottom: 2px solid black;
 }
+
 
 #skillBar{
 	width: 100%;
@@ -172,19 +204,18 @@ section ul{
   height: 30px;
   background-color: #4CAF50;
   text-align: center; /* To center it horizontally (if you want) */
-  line-height: 30px; /* To center it vertically */
-  color: white; 
+  line-height: 30px; /* To center it vertically */ 
 }
 #blogspot{
 	height: 350px;
-	background-color: #826C6C;
 }
 .blogs{
 	height: 250px;
 	width: 200px;
 	margin: auto;
-	background-color: grey;
+	border: 1px solid grey;
 	border-radius: 5px;
+	opacity: 0.4;
 }
 footer{
 	background-color: #434141;
